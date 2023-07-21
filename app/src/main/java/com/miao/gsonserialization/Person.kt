@@ -1,7 +1,9 @@
 package com.miao.gsonserialization
 
+import com.google.gson.annotations.SerializedName
+
 data class Person(
-    val name: String,
-    val age: Int,
+    @SerializedName("fullName") val name: String,
+    @SerializedName("yearsOld") val age: Int,
     val email: String
 )
